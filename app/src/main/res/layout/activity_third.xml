@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gam.ThirdActivity"
+    android:background="@drawable/backgr">
+
+    <TextView
+        android:id="@+id/timeHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="40sp"
+        android:text="00:00"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeHard">
+
+        <ImageView
+            android:id="@+id/oneHard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/gem" />
+
+        <ImageView
+            android:id="@+id/twoHard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/gem2" />
+
+        <ImageView
+            android:id="@+id/threeHard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/coin" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
